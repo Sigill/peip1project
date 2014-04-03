@@ -1,0 +1,34 @@
+@font-face{
+	font-family:"trash";
+	src : url("Sugar_Death2.ttf");
+}
+body {
+	background-color:black;
+	margin:0;
+	padding:0;
+}
+#canvas{
+	display:block;
+	width:500px;
+	height:500px;
+	margin: 120px auto;
+	float:left;
+}
+
+#left {
+	float:left;
+	display:inline-block;
+	margin:120px 0 0 360px;
+	height:500px;
+	width: 150px;
+	background-color: #3348ea;
+}
+
+#right {
+	display:inline-block;
+	float:left;
+	margin:120px 0 0 0 ; 
+	height:500px;
+	width: 150px;
+	background-color:#3348ea;
+}
