@@ -176,7 +176,7 @@ if(canvas.getContext){
 			var body = world.CreateBody(bodyDef);
 			body.CreateFixture(fixtureDef);
 			
-			body.ApplyImpulse(new b2Vec2(90+(r*180/Math.PI),-15),body.GetWorldCenter());
+			body.ApplyImpulse(new b2Vec2(90+(r*180/Math.PI),-20),body.GetWorldCenter());
 			
 			balls[balls.length]={
 				bodyD : bodyDef,
