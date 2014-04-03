@@ -288,9 +288,9 @@ if(canvas.getContext){
 
 			}
 			if(g_o){
-				ctx.font = "70px trash";
+				ctx.font = "75px trash";
 				ctx.fillStyle ="red";
-				ctx.fillText("Game over",35,250);
+				ctx.fillText("Game over",45,250);
 			}	
 			
 			canon();
