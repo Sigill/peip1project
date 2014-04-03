@@ -1,4 +1,3 @@
-
 body {
 	background-color:black;
 	margin:0;
@@ -15,7 +14,7 @@ body {
 #left {
 	float:left;
 	display:inline-block;
-	margin:120px 0 0 300px;
+	margin:120px 0 0 auto;
 	height:500px;
 	width: 150px;
 	background-color: #3348ea;
