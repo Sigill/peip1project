@@ -167,7 +167,7 @@ if(canvas.getContext){
 			fixtureDef.density = 1;
 			fixtureDef.restitution = 0.45;
 			fixtureDef.friction = 0;
-			bodyDef.position.Set((canvas.width/2+Math.cos(r)*45)/scale,((canvas.height+Math.sin(r)*70))/scale);
+			bodyDef.position.Set((canvas.width/2+Math.cos(r)*50)/scale,((canvas.height+Math.sin(r)*70))/scale);
 			bodyDef.userData = {
 				score:3,
 				ball:true,
