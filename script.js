@@ -1,4 +1,3 @@
-
 var canvas = document.getElementById("canvas");
 if(canvas.getContext){
 	function setCookie(sName, sValue) {
@@ -283,7 +282,7 @@ if(canvas.getContext){
 
 			}
 			if(g_o){
-				ctx.font = "80px Orbitron";
+				ctx.font = "50px Orbitron";
 				ctx.fillStyle ="red";
 				ctx.fillText("Game over",35,250);
 			}	
