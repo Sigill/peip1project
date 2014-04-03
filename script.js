@@ -290,7 +290,7 @@ if(canvas.getContext){
 			if(g_o){
 				ctx.font = "50px Orbitron";
 				ctx.fillStyle ="red";
-				ctx.fillText("Game over",75,250);
+				ctx.fillText("Game over",85,250);
 			}	
 			
 			canon();
