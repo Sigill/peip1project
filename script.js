@@ -91,6 +91,12 @@ if(canvas.getContext){
 		function verifi(){
 			if(taper==true && (balls[balls.length-1].center.y+balls[balls.length-1].radius)*scale>=canvas.height-80){
 				g_o = true;
+				if(g_o){
+					if(score_tot>=(+getCookie("b_score"))){
+						setCookie("b_score",score_tot);
+						document.getElementById("best_score").innerHTML = getCookie("b_score");
+					}
+				}
 				if(sound_go==0 && g_o){
 					createjs.Sound.play("game_ov");
 					sound_go++;
@@ -291,10 +297,6 @@ if(canvas.getContext){
 
 
 			document.getElementById("score").innerHTML = score_tot;
-			if(score_tot>=(+getCookie("b_score"))){
-				setCookie("b_score",score_tot);
-				document.getElementById("best_score").innerHTML = getCookie("b_score");
-			}
 			ctx.lineWidth = 4;
 			ctx.strokeStyle = "#3348ea";
 			ctx.strokeRect(0,0,width,height);
