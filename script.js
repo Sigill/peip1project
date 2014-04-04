@@ -325,12 +325,6 @@ if(canvas.getContext){
 		 		createWall(2,canvas.height,canvas.width/scale,0);
 		 		createWall(canvas.width,2,canvas.width/scale,0);
 		 		createWall(canvas.width,2,canvas.width/scale,canvas.height/scale);
-				for(var worldBody = world.GetBodyList();worldBody; worldBody = worldBody.GetNext()){
-					world.DestroyBody(worldBody);
-				}
-				for(var w = 0;w<balls.length;w++){
-					balls.splice(w,1);
-				}
 		 		score_tot = 0;
 		 		g_o = false;
 		 		taper = false;
