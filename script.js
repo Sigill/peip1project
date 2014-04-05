@@ -22,6 +22,12 @@ if(canvas.getContext){
 		}       
 		return null;
 	}
+	Array.prototype.clear = function() {
+  		while (this.length > 0) {
+    			this.pop();
+		}
+	};
+	
 	var ctx = canvas.getContext("2d");
 		//import des classes les plus utilisées sur box2DWeb
 		var b2Vec2 = Box2D.Common.Math.b2Vec2;
@@ -102,12 +108,9 @@ if(canvas.getContext){
 					sound_go++;
 				}
 				if(g_o){
-					
+					balls.clear();
 					for(var worldBody = world.GetBodyList();worldBody; worldBody = worldBody.GetNext()){
 						world.DestroyBody(worldBody);
-					}
-					for(var w = 0;w<balls.length;w++){
-						balls.splice(w,1);
 					}
 				}
 				
@@ -325,6 +328,7 @@ if(canvas.getContext){
 		 		createWall(2,canvas.height,canvas.width/scale,0);
 		 		createWall(canvas.width,2,canvas.width/scale,0);
 		 		createWall(canvas.width,2,canvas.width/scale,canvas.height/scale);
+		 		balls.clear();
 		 		score_tot = 0;
 		 		g_o = false;
 		 		taper = false;
