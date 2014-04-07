@@ -30,3 +30,21 @@ body {
 	width: 150px;
 	background-color:#3348ea;
 }
+a.info{
+	text-decoration: none;
+}
+a.info span {
+	font-family: arial;
+	position:absolute;
+ 	margin-top:3px;
+ 	margin-left:-55px;
+    color:#3348EA; background:rgba(0,0,0,.9);
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+
+}
+a.info:hover span, a.info:focus span{ transform:scale(1) rotate(0);  opacity:1;}
