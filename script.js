@@ -166,7 +166,7 @@ if(canvas.getContext){
 	    	createjs.Sound.play("sound");
 	    	var bodyDef = new b2BodyDef();
 	    	bodyDef.type = b2Body.b2_dynamicBody;
-			bodyDef.linearDamping = 2.5; //arrêter la balle ! 
+			bodyDef.linearDamping = 2; //arrêter la balle ! 
 			var fixtureDef = new b2FixtureDef();
 			fixtureDef.shape =new b2CircleShape();
 			fixtureDef.shape.SetRadius(15/scale);
