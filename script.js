@@ -166,7 +166,7 @@ if(canvas.getContext){
 	    	createjs.Sound.play("sound");
 	    	var bodyDef = new b2BodyDef();
 	    	bodyDef.type = b2Body.b2_dynamicBody;
-			bodyDef.linearDamping = 1; //arrêter la balle ! 
+			bodyDef.linearDamping = 2.5; //arrêter la balle ! 
 			var fixtureDef = new b2FixtureDef();
 			fixtureDef.shape =new b2CircleShape();
 			fixtureDef.shape.SetRadius(15/scale);
@@ -182,7 +182,7 @@ if(canvas.getContext){
 			var body = world.CreateBody(bodyDef);
 			body.CreateFixture(fixtureDef);
 			
-			body.ApplyImpulse(new b2Vec2(90+(r*180/Math.PI),-17),body.GetWorldCenter());
+			body.ApplyImpulse(new b2Vec2(90+(r*180/Math.PI),-30),body.GetWorldCenter());
 			
 			balls[balls.length]={
 				bodyD : bodyDef,
