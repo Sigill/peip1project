@@ -3,6 +3,7 @@
 	src : url("Sugar_Death2.ttf");
 }
 body {
+	width:100%;
 	background-color:black;
 	margin:0;
 	padding:0;
