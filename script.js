@@ -45,7 +45,7 @@ if(canvas.getContext){
 		var on = true;
 		var r = 0;
 		var times = 1;
-		var valeur_r = Math.PI/200;
+		var valeur_r = Math.PI/160;
 		var width = canvas.width;
 		var height = canvas.height;
 		var canon_on =on;
@@ -212,7 +212,7 @@ if(canvas.getContext){
 
 		function canon(){
 
-			if(times==200){
+			if(times==160){
 				valeur_r= -valeur_r;
 				times=1;
 			}
