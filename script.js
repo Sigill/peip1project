@@ -147,7 +147,7 @@ if(canvas.getContext){
 	    var quatre = (canvas.height - 80) - (y+balls[balls.length-1].radius);
 	    var cinq = (canvas.height)-(y+balls[balls.length-1].radius)
 	    var lng = 0;
-	    var r = Math.abs(Math.min(un,deux,trois,quatre)/scale);
+	    var r = Math.abs(Math.min(un,deux,trois,quatre,cinq)/scale);
 	    for(var i = 0;i<balls.length;i++){
 	    	var x_0 = (balls[i].center.x)*scale;
 	    	var y_0 = (balls[i].center.y)*scale;
